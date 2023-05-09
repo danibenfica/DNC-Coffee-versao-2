@@ -63,8 +63,7 @@ Este bloco de código define uma função "openModal" que exibe um modal na tela
 `function openModal() {
     const windowModal = document.getElementById('window-modal') 
     windowModal.classList.add('open')
-}
-`
+}`
 
 O intuito deste projeto é estudar as funcionalidades do JavaScript e do Bootstrap e o que podemos construir com essas ferramentas poderosas.
 
