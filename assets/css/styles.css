@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.card-body {
+    height: 180px;
+}
+
+
+.card-text-fixed-height {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.third-card{
+    width: 300px;
+    margin-left: -10px;
+
+}
+
+.btn-buy {
+    box-sizing: border-box;
+    position: absolute;
+    width: 202px;
+    height: 48px;
+    left: 54px;
+    top: 250px;
+    cursor: pointer;
+    background: #2A3342;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    display: none;
+    color: #F6F5FB;
+}
+
+.window-modal {
+    position: absolute;
+    width: 1715px;
+    height: 906px;
+    left: -363px;
+    top: -164px;
+    background: rgba(217, 217, 217, 0.7);
+    display: none;
+}
+
+.window-modal.open {
+    display: block;
+}
+
+.wModal {
+    position: absolute;
+    width: 500px;
+    height: 420px;
+    left: 800px;
+    top: 250px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    justify-content: center;
+    
+}
+
+.wModal h1{
+    position: absolute;
+    width: 259px;
+    height: 20px;
+    left: 150px;
+    top: 70px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 20px;
+    color: #000000;
+
+
+}
+
+.wModal h3 {
+    position: absolute;
+    width: 320px;
+    height: 130px;
+    left: 86px;
+    top: 130px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.wModal button{
+    box-sizing: border-box;
+    position: absolute;
+    width: 180px;
+    height: 36px;
+    top: 300px;
+    left: 150px;
+    background: #2A3342;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #F6F5FB;
+
+
+}
+
+.wModal img {
+    position: absolute;
+    left: 456px;
+    cursor: pointer;
+    top: 20px;
+}
+
+@keyframes openModal {
+    from {
+        opacity: 0;
+        transform: translate3d(0,-20px,-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.open .wModal {
+    animation: openModal 0.5s;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .third-card {
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .btn-buy {
+        left: 120px;
+    }
+
+    .window-modal {
+        width: 850px;
+        height: 2100px;
+    }
+    
+    .wModal {
+        width: 380px;
+        height:310px;
+        left: 420px;
+    }
+
+    .wModal h1 {
+        left: 90px;
+    }
+
+    .wModal h3 {
+        left: 40px;
+        top: 120px;
+    }
+
+    .wModal button {
+        left: 100px;
+        top: 230px;
+    }
+
+    .wModal img {
+        left: 330px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    .third-card {
+        width: 288px;
+    }
+
+    .btn-buy {
+        height: 30px;
+        left: 40px;
+        top: 280px;
+    }
+    
+    .window-modal {
+        width: 700px;
+        height: 2100px;
+    }
+    
+    .wModal {
+        width: 250px;
+        height:280px;
+        left: 400px;
+    }
+
+    .wModal h1 {
+        font-size: 16px;
+        left: 70px;
+        top: 40px;
+    }
+
+    .wModal h3 {
+        width: 260px;
+        font-size: 13px;
+        line-height: 20px;
+        left: -5px;
+        top: 70px;
+    }
+
+    .wModal button {
+        width: 110px;
+        height: 25px;
+        top: 150px;
+        left: 70px;
+        font-size: 9px;
+    }
+
+    .wModal img {
+        left: 200px;
+    }
+}
